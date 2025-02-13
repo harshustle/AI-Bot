@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { marked } from 'marked';
 import './App.css'; // Import the CSS file
 
 const App = () => {
+  useEffect(() => {
+    document.title = "AI Assistant";
+  }, []);
+
   const [query, setQuery] = useState("");
   const [response, setResponse] = useState("");
   const [isloading,setLoading] = useState(false);
