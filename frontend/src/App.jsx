@@ -11,6 +11,7 @@ const App = () => {
   const url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?";
   const apiKey = "key=AIzaSyCJWVYINPtVUxAbZWtl5f21SlJ9fG6jU_w";
 
+  
   const handleSubmit = async () => {
     try {
       console.log(query);
