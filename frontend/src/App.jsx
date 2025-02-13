@@ -4,9 +4,9 @@ import { marked } from 'marked';
 import './App.css'; // Import the CSS file
 
 const App = () => {
-  useEffect(() => {
+
     document.title = "AI Assistant";
-  }, []);
+
 
   const [query, setQuery] = useState("");
   const [response, setResponse] = useState("");
